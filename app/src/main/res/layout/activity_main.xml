@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.sdie3.testapp.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/button_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get"
+        app:layout_constraintBottom_toTopOf="@+id/button_get_param"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="148dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/button_get_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get param"
+        app:layout_constraintBottom_toTopOf="@+id/button_post"
+        app:layout_constraintTop_toBottomOf="@+id/button_get"
+        tools:layout_editor_absoluteX="141dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_param"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="버튼을 눌러보세요."
+        android:layout_weight="1.2"/>
+</LinearLayout>
